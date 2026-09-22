@@ -48,7 +48,7 @@ public class ArrayDescendingSortChallenge125 {
 		return array;
 	}
 
-	/** Tim imple - Maybe needs to like this if don't wanna use list */
+	/** Tim imple - Maybe needs to do like this if don't wanna use list */
 
 	private static int[] sortIntegers(int[] array) {
 

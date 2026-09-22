@@ -18,7 +18,8 @@ public class ArrayLists {
 		ArrayList<Object> objectList = new ArrayList<>();
 		objectList.add(new GroceryItem("Butter"));
 		objectList.add("Yogurt");
-
+		System.out.println(objectList);
+		
 		ArrayList<GroceryItem> groceryList = new ArrayList<>();
 		groceryList.add(new GroceryItem("Butter"));
         groceryList.add(new GroceryItem("milk"));

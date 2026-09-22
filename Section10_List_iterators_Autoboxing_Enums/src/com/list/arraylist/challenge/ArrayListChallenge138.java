@@ -10,6 +10,8 @@ import java.util.TreeSet;
 
 public class ArrayListChallenge138 {
 
+	private static final String ENTER_ALL_ITEMS = "Enter all items separated by \",\" ";
+
 	public static void main(String[] args) {
 		List<String> listOfItems = new ArrayList<>();
 		try (Scanner scanner = new Scanner(System.in)) {
@@ -39,7 +41,7 @@ public class ArrayListChallenge138 {
 	}
 
 	public static void removeItems(List<String> listOfItems, Scanner scanner) {
-		System.out.println("Enter all items separated by \",\" ");
+		System.out.println(ENTER_ALL_ITEMS);
 		String item = scanner.nextLine();
 		String[] values = item.split("\\s*,\\s*");
 		listOfItems.removeAll(List.of(values));
@@ -48,7 +50,7 @@ public class ArrayListChallenge138 {
 	}
 
 	public static void addItems(List<String> listOfItems, Scanner scanner) {
-		System.out.println("Enter all items separated by \",\" ");
+		System.out.println(ENTER_ALL_ITEMS);
 		String[] item = scanner.nextLine().split(",");
 //					String[] values = item.split("\\s*,\\s*"); // can do this, then no need of line 33
 //					String[] values = item.split(",");
@@ -87,13 +89,13 @@ public class ArrayListChallenge138 {
 					running = false;
 				}
 				case "1" -> {
-					System.out.println("Enter all items separated by \",\" ");
+					System.out.println(ENTER_ALL_ITEMS);
 					String[] values = scanner.nextLine().strip().split("\\s*,\\s*");
 					items.addAll(Arrays.asList(values));
 					System.out.println(items);
 				}
 				case "2" -> {
-					System.out.println("Enter all items separated by \",\" ");
+					System.out.println(ENTER_ALL_ITEMS);
 					String[] values = scanner.nextLine().strip().split("\\s*,\\s*");
 					items.removeAll(Arrays.asList(values));
 					System.out.println(items);
